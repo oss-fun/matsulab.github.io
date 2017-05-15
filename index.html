@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Exo|Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <title>System Software Lab | Future University Hakodate</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <h1 class="heading01">System Software Lab / <br class="sp" />Katsuya Matsubara</h1>
+      <p class="text">Tap to Enter</p>
+    </header>
+    <main id='main' class="main">
+      <div id="gnav" class="gnav">
+        <h2 class="gnav__ttl">SystemSoftwareLab</h2>
+        <a id="navBtn" class="gnav__btn"></a>
+        <ul id="navList" class="gnav__list">
+          <li id="toNews" class="gnav__list__item"><a>News</a></li>
+          <li id="toAbout" class="gnav__list__item"><a>About</a></li>
+          <li id="toProfessor" class="gnav__list__item"><a>Professor</a></li>
+          <li id="toMembers" class="gnav__list__item"><a>Members</a></li>
+          <li id="toResearch" class="gnav__list__item"><a>Research</a></li>
+        </ul>
+      </div>
+      <section id="news" class="section">
+        <h3 class="heading02">News</h3>
+        <div class="board">
+          <dl class="board__newsList">
+            <dt class="board__newsList__date">2017/05/15</dt>
+            <dd class="board__newsList__content">Web Site get started.</dd>
+          </dl>
+          <dl class="board__newsList">
+            <dt class="board__newsList__date">2017/05/15</dt>
+            <dd class="board__newsList__content">Web Site get started.</dd>
+          </dl>
+          <dl class="board__newsList">
+            <dt class="board__newsList__date">2017/05/15</dt>
+            <dd class="board__newsList__content">Web Site get started.</dd>
+          </dl>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <h3 class="heading02">About</h3>
+        <div class="board">
+          <p class="board__h1">概要</p>
+          <p class="board__plane">システムソフトウェアと呼ばれる低レイヤのソフトウェアの研究をしています。</p>
+        </div>
+      </section>
+      <section id="professor" class="section">
+        <h3 class="heading02">Professor</h3>
+        <div class="board">
+          <p class="board__h1">松原克弥 (Katsuya Matsubara)</p>
+          <p class="board__h2">所属学科</p>
+          <p class="board__plane">情報アーキテクチャ学科</p>
+          <p class="board__h2">専門分野</p>
+          <p class="board__plane">システム・ソフトウェア</p>
+        </div>
+      </section>
+      <section id="members" class="section">
+        <h3 class="heading02">Members</h3>
+        <div class="board">
+          <p class="board__h1">メンバー紹介</p>
+          <p class="board__h2">永井陽太(Yota Nagai)</p>
+          <p class="board__plane">システムソフトウェアと呼ばれる低レイヤのソフトウェアの研究をしています。</p>
+          <p class="board__h2">深谷けんた(Kenta Fukaya)</p>
+          <p class="board__plane">システムソフトウェアと呼ばれる低レイヤのソフトウェアの研究をしています。</p>
+          <p class="board__h2">源げん(Gen Minamoto)</p>
+          <p class="board__plane">システムソフトウェアと呼ばれる低レイヤのソフトウェアの研究をしています。</p>
+          <p class="board__h2">高川ゆうへい(Yuhei Takagawa)</p>
+          <p class="board__plane">システムソフトウェアと呼ばれる低レイヤのソフトウェアの研究をしています。</p>
+          <p class="board__h2">森田れん(Ren Morita)</p>
+          <p class="board__plane">システムソフトウェアと呼ばれる低レイヤのソフトウェアの研究をしています。</p>
+        </div>
+      </section>
+      <section id="research" class="section">
+        <h3 class="heading02">Research</h3>
+        <div class="board">
+          <p class="board__h1">研究概要</p>
+          <p class="board__h2">コンテナ型仮想化環境におけるOSカーネルの保護</p>
+          <ul class="board__list">
+            <li class="board__list__data">コンテナ型仮想化とは，OS上資源の仮想化cf. 従来の仮想化はハードウェアを仮想化</li>
+            <li class="board__list__data">OSカーネルの共有により，コンテナ間の隔離が不十分</li>
+            <li class="board__list__data">コンテナごとにOSカーネル内のコードやデータへのアクセスを制限する仕組みを実現</li>
+          </ul>
+          <p class="board__h2">異種OS環境におけるコンテナ型仮想化環境のライブマイグレーション</p>
+          <ul class="board__list">
+            <li class="board__list__data">ライブマイグレーションとは，高可用性・耐故障性の実現に重要な技術</li>
+            <li class="board__list__data">LinuxやFreeBSDなどの各種OSには，それぞれ長所があるため，うまく使い分けたい</li>
+            <li class="board__list__data">既存のコンテナ型仮想化実装におけるライブマイグレーションは，同じOS間のみ対応</li>
+            <li class="board__list__data">異種OS間のコンテナ型仮想化のライブマイグレーションを実現</li>
+          </ul>
+          <p class="board__h2">BYODを想定したPC教室における統一的なソフトウェア実行環境の実現</p>
+          <ul class="board__list">
+            <li class="board__list__data">ネットワークブートとは，PC教室における統一的なソフトウェア実行環境を実現する手法の一つ</li>
+            <li class="board__list__data">ネットワークブートの最大の問題は起動時間である</li>
+            <li class="board__list__data">BYOD(Bring Your Own Device)端末上では，起動時間の最適化が困難</li>
+            <li class="board__list__data">SDNを用いてサーバと端末間のネットワークを効率化することで，ネットワークブートの起動時間を短縮</li>
+          </ul>
+          <p class="board__h2">仮想化技術を活用したCTF (CaptureThe Flag) 支援に関する研究</p>
+          <ul class="board__list">
+            <li class="board__list__data">セキュリティをはじめ、エンジニアのIT技術向上を目的としたCTFの活用が注目されている</li>
+            <li class="board__list__data">オリジナル仮想マシンモニタBitVisorを使って，デバイスI/Oに「旗(Flag)」データを挿入</li>
+            <li class="board__list__data">BitVisorが処理をブラックボックス化することで，CTF問題の難易度をコントロール</li>
+            <li class="board__list__data">CTF問題作成における特殊スキルの必要性を軽減</li>
+          </ul>
+          <p class="board__h2">複数ドローン連携を想定したシステムソフトウェア基盤の開発</p>
+          <ul class="board__list">
+            <li class="board__list__data">複数ドローン連携での活用が注目されている　ex.農薬散布，災害現場の捜索</li>
+            <li class="board__list__data">現状のドローン開発環境では，個々のドローンごとに経路設定が必要</li>
+            <li class="board__list__data">並列分散処理フレームワークを用いて複数ドローン連携の開発を支援</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

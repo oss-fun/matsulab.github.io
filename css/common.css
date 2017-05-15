@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@media screen and (min-width: 720px) {
+  .sp {
+    display: none; } }
+
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 720px) {
+    html {
+      font-size: 12px; } }
+
+body {
+  scroll-behavior: smooth;
+  background-color: #231815;
+  color: #fff;
+  font-family: 'Orbitron', "游明朝", "Yu-Mincho", "YuMincho", "Yumincho",sans-serif; }
+
+.heading01 {
+  padding-top: calc(50vh - 1rem);
+  font-family: 'Exo', sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+
+.heading02 {
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  text-align: center; }
+
+.text {
+  font-size: 1rem; }
+
+.gnav {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 5px;
+  border-bottom: dashed 3px #eee;
+  width: 100vw;
+  height: 50px;
+  background-color: #231815;
+  opacity: 0;
+  transition-duration: 1s; }
+  .gnav__btn {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border: dashed 2px #231815;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 5px #FCE2C4;
+    background-color: #FCE2C4;
+    cursor: pointer; }
+  .gnav__ttl {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Exo', sans-serif; }
+    @media screen and (max-width: 720px) {
+      .gnav__ttl {
+        top: 15px; } }
+  .gnav__list {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition-duration: 1s; }
+    .gnav__list__item {
+      padding: 5px 10px;
+      border: dashed 1px #ccc;
+      width: 100%;
+      height: calc(30px - 10px);
+      background-color: #FCE2C4;
+      cursor: pointer; }
+      .gnav__list__item a {
+        color: #333; }
+
+.header {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .header .text {
+    margin-top: 15vh;
+    font-family: 'Dancing Script', cursive;
+    text-align: center; }
+
+.main {
+  width: 100vw; }
+
+.section {
+  margin: 30vh auto;
+  max-width: calc(100% - 10px);
+  width: 900px; }
+  .section:first-child {
+    margin-top: 10vh; }
+  .section:last-child {
+    margin-bottom: 10vh; }
+
+.board {
+  padding: 10px;
+  border: dashed 2px #666;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 5px #eee;
+  background-color: #eee;
+  color: #3E3A39; }
+  .board__newsList {
+    display: flex;
+    justify-content: space-between; }
+    .board__newsList__date {
+      flex: 1;
+      padding: 2.5px 10px;
+      border-bottom: dotted 1px #333;
+      text-align: center; }
+    .board__newsList__content {
+      flex: 3;
+      padding: 2.5px 10px;
+      border-bottom: dotted 1px #333; }
+  .board__h1 {
+    font-size: 1.2rem; }
+    .board__h1:before {
+      content: "#";
+      padding-right: 5px; }
+  .board__h2 {
+    margin-top: 5px; }
+    .board__h2:before {
+      content: "##";
+      padding-right: 5px; }
+  .board__list__data:before {
+    content: "-";
+    padding-right: 5px; }

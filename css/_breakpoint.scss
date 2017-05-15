@@ -1,0 +1,18 @@
+@mixin SP() {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin PC() {
+  @media screen and (min-width: 720px) {
+    @content;
+  }
+}
+
+
+.sp {
+  @include PC() {
+    display: none;
+  }
+}
